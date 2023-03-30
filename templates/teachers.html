@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Список учителей</title>
+</head>
+<body>
+  <h1>Список учителей</h1>
+  <ul>
+    {% for teacher in teachers %}
+        {% if teacher.photo %}
+        <img width="400px" src="{{ teacher.photo.url }}" alt="{{ teacher.name }}">
+        {% endif %}
+
+      <li>{{ teacher.name }} - {{ teacher.job }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

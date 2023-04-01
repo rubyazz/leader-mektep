@@ -1,10 +1,15 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render
 from .models import Teacher
 
 
 def teacher_list(request):
-    teachers = Teacher.objects.all()
-    return render(request, 'teachers.html', {'teachers': teachers})
+    qs = Teacher.objects.all()
+    lst = Paginator(qs, 3)
+    page_number = request.GET.get('page')
+    page_obj = lst.get_page(page_number)
+    context = {'page_obj': page_obj, }
+    return render(request, 'teachers.html', context)
 
 # return func of templates
 

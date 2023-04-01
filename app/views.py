@@ -4,7 +4,7 @@ from .models import Teacher
 
 def teacher_list(request):
     teachers = Teacher.objects.all()
-    return render(request, 'tea.html', {'teachers': teachers})
+    return render(request, 'teachers.html', {'teachers': teachers})
 
 # return func of templates
 

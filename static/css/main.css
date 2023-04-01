@@ -918,7 +918,7 @@ body{
 
 
 
-.teachers .teaceher h1{
+.teachers .teacher h1{
     color: #fff;
     font-size: 24px;
     visibility: hidden;
@@ -959,7 +959,7 @@ body{
     height: 316px;
 }
 
-.teachers .teacher:hover .about-member h1{
+.teachers .teacher:hover .about-member h1, .about-member p{
     visibility: visible;
     opacity: 1;
 }
@@ -983,6 +983,7 @@ body{
 .teachers .boxes{
     width: 100%;
     min-height: 332px;
+    max-height: 100%;
     margin: 0 auto 10%;
     display: flex;
     flex-direction: row;

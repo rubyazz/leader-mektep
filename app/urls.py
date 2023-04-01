@@ -23,6 +23,6 @@ urlpatterns = [
     path('gallery/', views.gallery, name='gallery'),
     path('bailanys/', views.bailanys, name='bailanys'),
     path('forma/', views.forma, name='forma'),
-    path('teachers/', views.teachers, name='teachers'),
+    path('teachers/', views.teacher_list, name='teachers'),
     path('uirme/', views.uirme, name='uirme'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -92,3 +92,64 @@ def teachers(request):
 def uirme(request):
     return render(request, 'uirme.html')
 
+# English
+def my_view_eng(request):
+    return render(request, 'eng/ata-ana-kom-en.html')
+
+def akimshilik_eng(request):
+    return render(request, 'eng/akimshilik-en.html')
+
+def activities_eng(request):
+    return render(request, 'eng/activities-en.html')
+
+def akeler_eng(request):
+    return render(request, 'eng/akeler-en.html')
+
+def bailanys_eng(request):
+    return render(request, 'eng/bailanys-en.html')
+
+def index_eng(request):
+    return render(request, 'eng/index-en.html')
+
+def ata_ana_eng(request):
+    return render(request, 'eng/ata-ana-en.html')
+
+def gallery_eng(request):
+    return render(request, 'eng/gallery-en.html')
+
+def forma_eng(request):
+    return render(request, 'eng/forma-en.html')
+
+def kundylyktar_eng(request):
+    return render(request, 'eng/kundylyktar-en.html')
+
+def kirispe_eng(request):
+    return render(request, 'eng/kirispe-en.html')
+
+def kuntizbe_eng(request):
+    return render(request, 'eng/kuntizbe-en.html')
+
+def kuzhat_eng(request):
+    return render(request, 'eng/kuzhat-en.html')
+
+def oob_zhumys_eng(request):
+    return render(request, 'eng/oob-zhumys-en.html')
+
+def pupils_eng(request):
+    return render(request, 'eng/pupils-en.html')
+
+def suraktar_eng(request):
+    return render(request, 'eng/suraktar-en.html')
+
+def tarbie_zhumystary2_eng(request):
+    return render(request, 'eng/tarbie_zhumystary2-en.html')
+
+def tarbie_zhumysy_eng(request):
+    return render(request, 'eng/tarbie_zhumysy-en.html')
+
+def teachers_eng(request):
+    return render(request, 'eng/teachers-en.html')
+
+def uirme_eng(request):
+    return render(request, 'eng/uirme-en.html')
+

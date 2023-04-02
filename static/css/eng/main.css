@@ -24,6 +24,7 @@ body{
     margin-top: 20px;
     background-color: #011E60;
     border-radius: 100%;
+    border: 1px #fff solid;
     height: 30px;
     width: 30px;
     margin-right: 10px;
@@ -89,21 +90,29 @@ body{
 
 #navbar{
     width: 100%;
-    background-color: #FED56B;
+    background-color: #003399;
 }
 
 
 #navbar a:hover{
-    background-color:#f2bb31;
+    background-color:#011E60;
     
     /* color: #fff; */
 }
 
 #navbar a{
     height: 100%;
-    color: #003399;
+    color: #fff;
     font-size: 14px;
     background-color: transparent;
+}
+
+.header-contacts a{
+    color: #fff;
+}
+
+.dropdown-menu{
+    background-color: #003399;
 }
 
 
@@ -135,6 +144,8 @@ body{
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+
+
 
 .intro .text{
     display: flex;
@@ -178,9 +189,25 @@ body{
     .text{
         margin: auto;
     }
+    .intro-img{
+        margin: auto;
+    }
+
+    .intro-img img{
+        width: 100%;
+    }
 
     .intro p{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .text{
+        margin-right: 3%;
+    }
+    .intro-img{
+    margin: auto ;
     }
 }
 
@@ -363,6 +390,9 @@ body{
         margin: 5% auto;
         position: relative ;
     }
+    .about-member{
+        width: 100%;
+    }
 }
 
 
@@ -378,6 +408,8 @@ body{
     position: relative;
     display: flex;
     margin: 5% auto 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .comments img{
@@ -399,7 +431,20 @@ body{
     color: #fff;
     text-align: center;
     margin-top: 3%;
+    margin-bottom: 10%;
     /* position: absolute; */
+}
+
+.comments .comment {
+    margin-top: 200px;
+    width: 70%;
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    background-color: #25232393;
+    border-radius: 40px;
+    height: 100%;
 }
 
 
@@ -410,7 +455,7 @@ body{
 /* ----------------FOOTER------------- */
 
 .podval{
-    margin: auto auto 10%;
+    margin: auto;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -475,6 +520,17 @@ body{
     width: 100%;
     height: 95px;
     background-color: #003399;
+}
+
+.city {
+    width: 80%;
+    margin: 5% auto 10%;
+    color: #003399;
+    text-align: center;
+}
+
+.city {
+    font-weight: 700;
 }
 
 
@@ -918,7 +974,7 @@ body{
 
 
 
-.teachers .teacher h1{
+.teachers .teaceher h1{
     color: #fff;
     font-size: 24px;
     visibility: hidden;
@@ -959,7 +1015,7 @@ body{
     height: 316px;
 }
 
-.teachers .teacher:hover .about-member h1, .about-member p{
+.teachers .teacher:hover .about-member h1{
     visibility: visible;
     opacity: 1;
 }
@@ -983,7 +1039,6 @@ body{
 .teachers .boxes{
     width: 100%;
     min-height: 332px;
-    max-height: 100%;
     margin: 0 auto 10%;
     display: flex;
     flex-direction: row;

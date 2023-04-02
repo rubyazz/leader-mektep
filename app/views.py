@@ -1,6 +1,6 @@
 from django.core.paginator import Paginator
 from django.shortcuts import render
-from .models import Teacher
+from .models import Teacher, Bastaush
 
 
 def teacher_list(request):
@@ -11,6 +11,32 @@ def teacher_list(request):
     context = {'page_obj': page_obj, }
     return render(request, 'teachers.html', context)
 
+
+def bastaush(request):
+    qs = Bastaush.objects.all()
+    lst = Paginator(qs, 3)
+    page_number = request.GET.get('page')
+    page_obj = lst.get_page(page_number)
+    context = {'page_obj': page_obj, }
+    return render(request, 'bastaush.html', context)
+
+
+
+def teacher_list_eng(request):
+    qs = Teacher.objects.all()
+    lst = Paginator(qs, 3)
+    page_number = request.GET.get('page')
+    page_obj = lst.get_page(page_number)
+    context = {'page_obj': page_obj, }
+    return render(request, 'eng/teachers-en.html', context)
+
+def bastaush_eng(request):
+    qs = Bastaush.objects.all()
+    lst = Paginator(qs, 3)
+    page_number = request.GET.get('page')
+    page_obj = lst.get_page(page_number)
+    context = {'page_obj': page_obj, }
+    return render(request, 'eng/bastaush_en.html', context)
 # return func of templates
 
 def index(request):

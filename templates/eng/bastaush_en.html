@@ -1,0 +1,81 @@
+{% extends './base.html' %}
+{% load static %}
+ {% block lan %}
+                    <li><a class="dropdown-item" href="{% url 'bastaush'%}">қаз</a></li>
+                    <li><a class="dropdown-item" href="{% url 'bastaush_eng'%}">en</a></li>
+{% endblock %}
+
+{% block content %}
+
+      <!-- --------------------KIRISPE--------------- -->
+      <div class="kirispe">
+        <a href="#">
+          <img src="{% static 'img/kirispe.png' %}" alt="">
+          <div class="title">
+            <div class="container">
+              <h1>TEACHERS</h1>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+
+
+      
+<!--         teachers           -->
+
+  <div class="container">
+  <div class="teachers">
+      <div class="boxes">
+      <div class="row">
+    {% for teacher in page_obj %}
+    <div class="col-md-4">
+      <div class="teacher" id="{{ teacher.id }}">
+        <img  src="{{ teacher.photo.url }}" alt="">
+        <div class="about-member">
+          <h1>{{ teacher.name }}</h1>
+          <p>{{ teacher.job }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  </div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+        {% if page_obj.has_previous %}
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            </a>
+        {% endif %}
+    </li>
+    {% for page in page_obj.paginator.page_range %}
+        <li class="page-item {% if page == page_obj.number %} active {% endif %} ">
+            <a class="page-link" href="?page={{page}}">
+                {{ page }}
+            </a>
+        </li>
+    {% endfor %}
+    <li class="page-item">
+        {% if page_obj.has_next %}
+      <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+        {% endif %}
+    </li>
+  </ul>
+</nav>
+
+
+    </div>
+
+    </div>
+  </div>
+
+{% endblock %}

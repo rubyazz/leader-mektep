@@ -5,7 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('tea/', views.teacher_list, name='teacher_list'),
     path('activities/', views.activities, name='activities'),
     path('pupils/', views.pupils, name='pupils'),
     path('kundylyktar/', views.kundylyktar, name='kundylyktar'),
@@ -43,6 +42,8 @@ urlpatterns = [
     path('eng/suraktar/', views.suraktar_eng, name='suraktar_eng'),
     path('eng/tarbie_zhumystary2/', views.tarbie_zhumystary2_eng, name='tarbie_zhumystary2_eng'),
     path('eng/tarbie_zhumysy/', views.tarbie_zhumysy_eng, name='tarbie_zhumysy_eng'),
-    path('eng/teachers/', views.teachers_eng, name='teachers_eng'),
+    path('eng/teachers/', views.teacher_list_eng, name='teachers_eng'),
     path('eng/uirme/', views.uirme_eng, name='uirme_eng'),
+    path('bastaush/', views.bastaush, name='bastaush'), # second teachers
+    path('eng/bastaush/', views.bastaush_eng, name='bastaush_eng'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

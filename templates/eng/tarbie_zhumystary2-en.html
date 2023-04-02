@@ -1,152 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leader.edu</title>
+{% extends './base.html' %}
+{% load static %}
+ {% block lan %}
+                    <li><a class="dropdown-item" href="{% url 'tarbie_zhumystary2' %}">қаз</a></li>
+                    <li><a class="dropdown-item" href="{% url 'tarbie_zhumystary2_eng' %}">en</a></li>
+{% endblock %}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    
-    <link rel="stylesheet" href="../../static/css/eng/main.css">
-</head>
-<body>
-    
-
-                    <!-------------------- HEADER  -------------------->
-
-
-                    <div class="header-social-icons">
-                      <div class="container">
-                          <div class="header-social">
-                              <div class="social">
-                                  <a href="https://www.instagram.com/leader.edu.kz/" target="_blank"><img src="img/instagram.png" width="16px;" alt=""></a>
-                              </div>
-                              <div class="social">
-                                  <a href="#"><img src="img/facebook.png" width="16px;" alt=""></a>
-                              </div>
-                              <div class="social">
-                                  <a href="#"><img src="img/youtube.png" width="16px;" alt=""></a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              
-                  <div class="container">
-                      <div class="header-contacts">
-                          <div class="logo">
-                              <a href="index-en.html"><img src="img/logo.png" width="120px;" alt=""></a>
-                          </div>
-              
-                          <ul class="nav justify-content-end">
-                              <li class="nav-item" >
-                                  <p class="nav-link"><img src="img/phone.png" width="20px;" alt=""> +77078006383</p>
-                              </li>
-              
-                              <li class="nav-item">
-                                  <p class="nav-link"><img src="img/mail.png"  alt=""> Too-liderxxi@mail.ru</p>
-                              </li>
-              
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" style="padding-bottom: 25px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">en</a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="tarbie_zhumystary2.html">қаз</a></li>
-                                  <li><a class="dropdown-item" href="tarbie_zhumystary2-en.html">en</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                  
-                      </div>
-                  </div>
-              
-              
-                  <nav class="navbar navbar-expand-lg" id="navbar">
-                      <div class="container">
-                        <button class="navbar-toggler" style="margin-left: 80%" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"><img src="img/menu.png" alt="" width="32px;"></span>
-                        </button>
-                        <div class="collapse navbar-collapse"  id="navbarNavDropdown">
-                          <ul class="navbar-nav" style="width: 80%; justify-content: space-between; margin: auto;">
-                            <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="index-en.html">MAIN PAGE</a>
-                            </li>
-              
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  ABOUT US
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="kirispe-en.html">INTRODUCTION SPEECH</a></li>
-                                <li><a class="dropdown-item" href="kundylyktar-en.html">OUR GUIDING PRINCIPLES</a></li>
-                                <li><a class="dropdown-item" href="akimshilik-en.html">GOVERNMENT</a></li>
-                                <li><a class="dropdown-item" href="kuntizbe-en.html">ANNUAL CALENDAR</a></li>
-                                <li><a class="dropdown-item" href="gallery-en.html">GALLERY</a></li>
-                              </ul>
-                            </li>
-              
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  ADMISSION TO THE SCHOOL
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="suraktar-en.html">FREQUENTLY ASKED QUESTIONS</a></li>
-                                <li><a class="dropdown-item" href="forma-en.html">UNIFORM</a></li>
-                                <li><a class="dropdown-item" href="kuzhat-en.html">ACCEPTANCE DOCUMENT</a></li>
-                              </ul>
-                            </li>
-              
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  PRIMARY SCHOOL
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="teachers-en.html">TEACHERS</a></li>
-                                <li><a class="dropdown-item" href="tarbie_zhumysy-en.html">EDUCATIONAL WORK</a></li>
-                                <li><a class="dropdown-item" href="uirme-en.html">EXTRACURRICULAR ACTIVITIES</a></li>
-                              </ul>
-                            </li>
-              
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  HIGH SCHOOL
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="teachers-en.html">TEACHERS</a></li>
-                                <li><a class="dropdown-item" href="tarbie_zhumystary2-en.html">EDUCATIONAL WORK</a></li>
-                                <li><a class="dropdown-item" href="oob-zhumys-en.html">SELF-GOVERNMENT COUNCIL</a></li>
-                              </ul>
-                            </li>
-              
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  PARENTS
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="ata-ana-en.html">WORKING WITH PARENTS</a></li>
-                                <li><a class="dropdown-item" href="akeler-en.html">THE COUNCIL OF FATHERS</a></li>
-                                <li><a class="dropdown-item" href="ata-ana-kom-en.html">PARENTS COMMITTEE</a></li>
-                              </ul>
-                            </li>
-              
-                            <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="bailanys-en.html">Contacts</a>
-                            </li>
-              
-                          </ul>
-                        </div>
-                      </div>
-                    </nav>
-              
-
+{% block content %}
 
       <!-- --------------------KIRISPE--------------- -->
       <div class="kirispe">
         <a href="#">
-          <img src="img/kirispe.png" alt="">
+          <img src="{% static 'img/kirispe.png' %}" alt="">
           <div class="title">
             <div class="container">
               <h1>EDUCATIONAL WORK</h1>
@@ -203,13 +67,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/tarbie_zhumysy2.png" class="d-block w-100" alt="...">
+            <img src="{% static 'img/tarbie_zhumysy2.png'%}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/header2.jpg" class="d-block w-100" alt="...">
+            <img src="{% static 'img/header2.jpg'%}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/header3.jpg" class="d-block w-100" alt="...">
+            <img src="{% static 'img/header3.jpg'%}" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -222,68 +86,4 @@
         </button>
       </div>
 
-
-
-<!-- -------------------------FOOTER---------------  -->
-<div class="container">
-  <div class="podval">
-  
-    <div class="footer-contacts">
-        <div class="h4"><h4>Contact us!</h4></div>
-
-        <ul class="nav justify-content-end">
-
-          <li class="nav-item" >
-            <p class="nav-link"><img src="img/mark.png" width="20px;" alt=""> Shymkent city Argynbekova street 1180</p>
-          </li>
-
-          <li class="nav-item" >
-              <p class="nav-link"><img src="img/phone.png" width="20px;" alt=""> +77078006383</p>
-          </li>
-
-          <li class="nav-item" >
-            <p class="nav-link"><img src="img/homephone.png" width="20px;" alt=""> +77078006383</p>
-          </li>
-
-          <li class="nav-item">
-              <p class="nav-link"><img src="img/mail.png"  alt=""> Too-liderxxi@mail.ru</p>
-          </li>
-
-        </ul>
-
-    </div>
-
-    <div class="kundelik">
-      <img src="img/kundelik.png" alt="">
-    </div>
-
-    <div class="map">
-      <img src="img/map.png" alt="">
-    </div>
-
-  </div>  
-</div>
-
-<div class="container">
-  <div class="city">
-  <p>© Шымкент 2023</p>
-  </div>
-</div>
-
-<div class="blueline">
-
-</div>
-
-
-
-
-
-</body>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
-
-
-</html>
+{% endblock %}

@@ -12,8 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">-->
+
+
+
 
     <link rel="stylesheet" href="{% static '../static/css/eng/main.css' %}">
+
+
 </head>
 <body>
                 <!-------------------- HEADER  -------------------->
@@ -26,10 +32,10 @@
                     <a href="https://www.instagram.com/leader.edu.kz/" target="_blank"><img src="{% static 'img/instagram.png' %}" width="16px;" alt=""></a>
                 </div>
                 <div class="social">
-                    <a href="#"><img src="{% static 'img/facebook.png' %}" width="16px;" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100091984866904&mibextid=LQQJ4d" target="_blank"><img src="{% static 'img/facebook.png' %}" width="16px;" alt=""></a>
                 </div>
                 <div class="social">
-                    <a href="#"><img src="{% static 'img/youtube.png' %}" width="16px;" alt=""></a>
+                    <a href="https://youtube.com/@leaderinnovationschool9389" target="_blank"><img src="{% static 'img/youtube.png' %}" width="16px;" alt=""></a>
                 </div>
             </div>
         </div>
@@ -38,7 +44,7 @@
     <div class="container">
         <div class="header-contacts">
             <div class="logo">
-                <a href="index.html"><img src="{% static 'img/logo.png' %}" width="120px;" alt=""></a>
+                <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" width="120px;" alt=""></a>
             </div>
 
             <ul class="nav justify-content-end">
@@ -81,8 +87,10 @@
                   <li><a class="dropdown-item" href="{% url 'kirispe' %}">КІРІСПЕ СӨЗ</a></li>
                   <li><a class="dropdown-item" href="{% url 'kundylyktar' %}">БАСШЫЛЫҚ ПРИНЦИПТЕРІМІЗ</a></li>
                   <li><a class="dropdown-item" href="{% url 'akimshilik' %}">МЕКТЕП ӘКІМШІЛІГІ</a></li>
+                  <li><a class="dropdown-item" href="{% url 'uirme_zhetekshileri' %}">ҮЙІРМЕ ЖЕТЕКШІЛЕРІ</a></li>
                   <li><a class="dropdown-item" href="{% url 'kuntizbe' %}">ЖЫЛДЫҚ КҮНТІЗБЕ</a></li>
                   <li><a class="dropdown-item" href="{% url 'gallery' %}">ГАЛЕРЕЯ</a></li>
+                  <li><a class="dropdown-item" href="{% url 'menu' %}">АC MӘЗIРI</a></li>
                 </ul>
               </li>
 
@@ -91,9 +99,9 @@
                     МЕКТЕПКЕ ҚАБЫЛДАУ
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="{% url 'suraktar' %}">ЖИІ ҚОЙЫЛАТНЫ СҰРАҚТАР</a></li>
+                  <li><a class="dropdown-item" href="{% url 'suraktar' %}">ЖИІ ҚОЙЫЛАТЫН СҰРАҚТАР</a></li>
                   <li><a class="dropdown-item" href="{% url 'forma' %}">МЕКТЕП ФОРМАСЫ</a></li>
-                  <li><a class="dropdown-item" href="{% url 'kuzhat' %}">ҚАБЫЛДАУ ҚҰЖАТ</a></li>
+                  <li><a class="dropdown-item" href="{% url 'kuzhat' %}">ҚАБЫЛДАУ ҚҰЖАТТАРЫ</a></li>
                 </ul>
               </li>
 
@@ -153,16 +161,16 @@
         <ul class="nav justify-content-end">
 
           <li class="nav-item" >
-            <p class="nav-link"><img src="{% static 'img/mark.png' %}" width="20px;" alt=""> Шымкент қаласы Майлы Қожа көшесі 150</p>
+            <p class="nav-link"><img src="{% static 'img/mark.png' %}" width="20px;" alt=""> Шымкент қаласы Арғынбекова көшесі 1180</p>
           </li>
 
           <li class="nav-item" >
               <p class="nav-link"><img src="{% static 'img/phone.png' %}" width="20px;" alt=""> +77078006383</p>
           </li>
 
-          <li class="nav-item" >
-            <p class="nav-link"><img src="{% static 'img/homephone.png' %}" width="20px;" alt=""> +77078006383</p>
-          </li>
+          <!--<li class="nav-item" >-->
+          <!--  <p class="nav-link"><img src="{% static 'img/homephone.png' %}" width="20px;" alt=""> +77078006383</p>-->
+          <!--</li>-->
 
           <li class="nav-item">
               <p class="nav-link"><img src="{% static 'img/mail.png' %}"  alt=""> Too-liderxxi@mail.ru</p>
@@ -176,10 +184,20 @@
       <img src="{% static 'img/kundelik.png' %}" alt="">
     </div>
 
+    <div class="edupage">
+        <img src="{% static 'img/edupage.jpg' %}" width="50%" alt="">
+    </div>
+
     <div class="map">
       <img src="{% static 'img/map.png' %}" alt="">
     </div>
 
+  </div>
+</div>
+
+<div class="container">
+  <div class="city">
+  <p>© Шымкент 2023</p>
   </div>
 </div>
 

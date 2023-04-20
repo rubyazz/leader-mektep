@@ -1,0 +1,81 @@
+{% extends './base.html' %}
+{% load static %}
+{% block lan %}
+                    <li><a class="dropdown-item" href="{% url 'uirme_zhetekshileri' %}">қаз</a></li>
+                    <li><a class="dropdown-item" href="{% url 'uirme_zhetekshileri_eng' %}">en</a></li>
+{% endblock %}
+
+{% block content %}
+      <!-- --------------------KIRISPE--------------- -->
+      <div class="kirispe">
+        <a href="#">
+          <img src="{% static 'img/kirispe.png'%}" alt="">
+          <div class="title">
+            <div class="container">
+              <h1>CLUB HEADS</h1>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+
+
+        <!-- ----------------STUFF ----------------->
+<div class="container">
+
+    <div class="stuff">
+      <h1 id="title_stuff">Club heads</h1>
+      <div class="boxes">
+
+          <div class="member" id="1">
+            <img src="{% static 'img/bi.jpg'%}" alt="">
+            <div class="about-member">
+                <h1>Baiseit Kamila</h1>
+                <p>Head of the dance club</p>
+            </div>
+          </div>
+
+          <div class="member" id="2">
+            <img src="{% static 'img/dombyra.jpg'%}" alt="">
+            <div class="about-member">
+                <h1>Seilkhanov Magzhan</h1>
+                <p>Head of Dombyra club</p>
+            </div>
+          </div>
+
+          <div class="member" id="3">
+            <img src="{% static 'img/intellektum.jpg'%}" alt="">
+            <div class="about-member">
+                <h1>Tuyakbayeva Zhanar</h1>
+                <p>Head of Intellectum club</p>
+            </div>
+          </div>
+
+          <div class="member" id="4">
+            <img src="{% static 'img/speaking.jpg'%}" alt="">
+            <div class="about-member">
+                <h1>San Pietro</h1>
+                <p>Head of Speaking club</p>
+            </div>
+          </div>
+
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

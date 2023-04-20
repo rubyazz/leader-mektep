@@ -1,6 +1,6 @@
 {% extends './base.html' %}
 {% load static %}
- {% block lan %}
+{% block lan %}
                     <li><a class="dropdown-item" href="{% url 'akimshilik' %}">қаз</a></li>
                     <li><a class="dropdown-item" href="{% url 'akimshilik_eng' %}">en</a></li>
 {% endblock %}
@@ -22,57 +22,112 @@
 
 
 
-
-
-
-<!-- ----------------STUFF ----------------->
+        <!-- ----------------STUFF ----------------->
 <div class="container">
 
-  <div class="stuff">
-    <h1 id="title_stuff">Our stuff</h1>
-    <div class="boxes">
-  
+    <div class="stuff">
+      <h1 id="title_stuff">Our stuff</h1>
+      <div class="boxes">
+
+          <div class="member" id="1">
+            <img src="{% static 'img/director.jpg'%}" alt="">
+            <div class="about-member">
+                <h1>Erkin Esirkegenuly</h1>
+                <p>Principle</p>
+            </div>
+          </div>
+
+          <div class="member" id="2">
+            <img src="{% static 'img/Aigerim.jpg'%}" alt="">
+            <div class="about-member">
+                <h1>Otegenova Aigerim Erbolkyzy</h1>
+                <p>Deputy director for Academic Affairs</p>
+            </div>
+          </div>
+
+          <div class="member" id="3">
+            <img src="{% static 'img/Zholdasbaev.jpg'%}" alt="">
+            <div class="about-member">
+                <h1>Zholdasbaev Zhasulan Tasbolatuly</h1>
+                <p>Deputy director for Public Works</p>
+            </div>
+          </div>
+
+          <div class="member" id="4">
+            <img src="{% static 'img/Akerke.jpg'%}" alt="">
+            <div class="about-member">
+                <h1>Akylbek Dariga Makhambetkyzy</h1>
+                <p>Deputy director for educational work</p>
+            </div>
+          </div>
+
+
+
+
+      </div>
+
+      <div class="boxes">
+
         <div class="member" id="1">
-          <img src="{% static 'img/director.jpg'%}" alt="">
+          <img src="{% static 'img/bukhalter.jpg'%}" alt="">
           <div class="about-member">
-              <h1>Erkin Esirkegenuly</h1>
-              <p>Principle</p>   
+              <h1>Zhomartova Nazym</h1>
+              <p>Accountant</p>
           </div>
         </div>
-  
+
         <div class="member" id="2">
-          <img src="{% static 'img/Aigerim.jpg'%}" alt="">
+          <img src="{% static 'img/HR.jpg'%}" alt="">
           <div class="about-member">
-              <h1>Otegenova Aigerim Erbolkyzy</h1>
-              <p>Deputy director for Academic Affairs</p>
+              <h1>Mussabekova Assem</h1>
+              <p>HR</p>
           </div>
         </div>
-  
+
         <div class="member" id="3">
-          <img src="{% static 'img/Zholdasbaev.jpg' %}" alt="">
+          <img src="{% static 'img/medbike.jpg'%}" alt="">
           <div class="about-member">
-              <h1>Zholdasbaev Zhasulan Tasbolatuly</h1>
-              <p>Deputy director for Public Works</p>
+              <h1>Kudaibergen Aidana</h1>
+              <p>Nurse</p>
           </div>
         </div>
-  
+
         <div class="member" id="4">
-          <img src="{% statcic 'img/Akerke.jpg' %}" alt="">
+          <img src="{% static 'img/kassir.jpg'%}" alt="">
           <div class="about-member">
-              <h1>Akylbek Dariga Makhambetkyzy</h1>
-              <p>Deputy director for educational work</p>
+              <h1>Malik Sunkar</h1>
+              <p>Coordinator cashier</p>
           </div>
         </div>
+
+
+
+
+    </div>
+
+    <div class="boxes">
+
+        <div class="member" id="1">
+          <img src="{% static 'img/SMM.jpg'%}" alt="">
+          <div class="about-member">
+              <h1>Erubai Dinara Bakytbekkyzy</h1>
+              <p>SMM</p>
+          </div>
+        </div>
+
+
+
+
+    </div>
 
     </div>
   </div>
-</div>
 
 
 
 
   <div class="container">
-    
+
     <div class="akimshilik-text">
         <h1>EDUCATION PROGRAM</h1>
     <p>The curriculum includes the domestic curriculum and the programs of Educational Innovation lyceums. Program grades 1-9

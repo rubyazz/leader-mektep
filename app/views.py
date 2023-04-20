@@ -42,6 +42,15 @@ def bastaush_eng(request):
 def index(request):
     return render(request, 'index.html')
 
+def uirme_zhetekshileri(request):
+    return render(request, 'uirme_zhetekshileri.html')
+
+def uirme_zhetekshileri_eng(request):
+    return render(request, 'eng/uirme_zhetekshileri-en.html')
+
+def menu(request):
+    return render(request, 'menu.html')
+
 
 def activities(request):
     return render(request, 'activities.html')

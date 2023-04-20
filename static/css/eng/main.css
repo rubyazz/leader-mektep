@@ -96,7 +96,7 @@ body{
 
 #navbar a:hover{
     background-color:#011E60;
-    
+
     /* color: #fff; */
 }
 
@@ -171,7 +171,7 @@ body{
 
 .intro p{
     font-size: 14px;
-    
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -309,7 +309,7 @@ body{
     font-weight: 700;
 }
 
-.about-member p{
+.stuff .about-member p{
     visibility: hidden;
     opacity: 0;
     font-size: 12px;
@@ -342,12 +342,12 @@ body{
     height: 316px;
 }
 
-.member:hover .about-member p,  h1{
+.stuff .member:hover .about-member p{
     visibility: visible;
     opacity: 1;
 }
 
-.member:hover .about-member h1{
+.stuff .member:hover .about-member h1{
     visibility: visible;
     opacity: 1;
 }
@@ -469,6 +469,10 @@ body{
     padding-left: 15px;
 }
 
+.footer-contacts{
+    min-width: 270px;
+}
+
 .footer-contacts .nav{
     display: flex;
     flex-direction: column;
@@ -514,6 +518,17 @@ body{
         width: 80%;
         margin-bottom: 10%;
     }
+
+    .edupage{
+    margin: 15% auto;
+    text-align: center;
+    }
+}
+
+.edupage{
+    width: 200px;
+    margin: 8% auto;
+    text-align: center;
 }
 
 .blueline{
@@ -875,9 +890,7 @@ body{
 
 
 
-
-
-/* .teachers .gallery-category h1{
+.teachers .teacher h1{
     color: #fff;
     font-size: 24px;
     visibility: hidden;
@@ -885,101 +898,9 @@ body{
     font-weight: 700;
 }
 
-
-.teachers .gallery-category{
-    overflow: hidden;
-}
-
-.teachers .gallery-category:hover{
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.teachers-category a{
-    text-decoration: none;
-}
-
-.teachers .about-member{
-    margin: 8px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background: radial-gradient(#011E60, #011d6089);
-    width: 312px;
-    height: 0px;
-    color: #fff;
-    transition: .5s;
-    justify-content: center;
-    align-items: center;
-}
-
-.teachers .teacher:hover .about-member{
-    height: 316px;
-}
-
-.teachers .teacher:hover .about-member h1{
-    visibility: visible;
-    opacity: 1;
-}
-
-
-.teachers{
-    width: 80%;
-    margin: auto;
-}
-
-.teachers img{
-    width: 328px;
-    height: 332px;
-    object-fit: cover;
-    margin: auto;
-    position: absolute;
-    margin-bottom: 10%;
-}
-
-.teachers .boxes{
-    width: 100%;
-    min-height: 332px;
-    margin: 0 auto 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-@media screen and (max-width: 1200px) {
-    .teachers .boxes{
-        flex-direction: column;
-        margin: 10% auto;
-        align-items: center;
-        text-align: center;
-    }
-
-    .teachers img{
-        width: 100%;
-        height: 100%;
-        margin: 5% auto;
-        position: relative ;
-    }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-.teachers .teaceher h1{
-    color: #fff;
-    font-size: 24px;
+.teachers .teacher p{
     visibility: hidden;
     opacity: 0;
-    font-weight: 700;
 }
 
 
@@ -997,7 +918,6 @@ body{
 }
 
 .teachers .about-member{
-    margin: 8px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1013,9 +933,15 @@ body{
 
 .teachers .teacher:hover .about-member{
     height: 316px;
+    width: 312px;
+    margin: 8px;
 }
 
 .teachers .teacher:hover .about-member h1{
+    visibility: visible;
+    opacity: 1;
+}
+.teachers .teacher:hover .about-member p{
     visibility: visible;
     opacity: 1;
 }
